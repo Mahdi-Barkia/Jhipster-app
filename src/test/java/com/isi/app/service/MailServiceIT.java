@@ -2,7 +2,7 @@ package com.isi.app.service;
 
 import com.isi.app.config.Constants;
 
-import com.isi.app.JhipsterProjectApp;
+import com.isi.app.SoaAppApp;
 import com.isi.app.domain.User;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.jupiter.api.BeforeEach;
@@ -40,7 +40,7 @@ import static org.mockito.Mockito.*;
 /**
  * Integration tests for {@link MailService}.
  */
-@SpringBootTest(classes = JhipsterProjectApp.class)
+@SpringBootTest(classes = SoaAppApp.class)
 public class MailServiceIT {
 
     private static final String[] languages = {

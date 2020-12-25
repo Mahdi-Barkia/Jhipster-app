@@ -1,6 +1,6 @@
 package com.isi.app.service;
 
-import com.isi.app.JhipsterProjectApp;
+import com.isi.app.SoaAppApp;
 import com.isi.app.config.Constants;
 import com.isi.app.domain.User;
 import com.isi.app.repository.UserRepository;
@@ -32,7 +32,7 @@ import static org.mockito.Mockito.when;
 /**
  * Integration tests for {@link UserService}.
  */
-@SpringBootTest(classes = JhipsterProjectApp.class)
+@SpringBootTest(classes = SoaAppApp.class)
 @Transactional
 public class UserServiceIT {
 

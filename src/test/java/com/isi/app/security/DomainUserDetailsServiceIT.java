@@ -1,6 +1,6 @@
 package com.isi.app.security;
 
-import com.isi.app.JhipsterProjectApp;
+import com.isi.app.SoaAppApp;
 import com.isi.app.domain.User;
 import com.isi.app.repository.UserRepository;
 
@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 /**
  * Integrations tests for {@link DomainUserDetailsService}.
  */
-@SpringBootTest(classes = JhipsterProjectApp.class)
+@SpringBootTest(classes = SoaAppApp.class)
 @Transactional
 public class DomainUserDetailsServiceIT {
 

@@ -1,6 +1,6 @@
 package com.isi.app.config.timezone;
 
-import com.isi.app.JhipsterProjectApp;
+import com.isi.app.SoaAppApp;
 import com.isi.app.repository.timezone.DateTimeWrapper;
 import com.isi.app.repository.timezone.DateTimeWrapperRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for the ZoneId Hibernate configuration.
  */
-@SpringBootTest(classes = JhipsterProjectApp.class)
+@SpringBootTest(classes = SoaAppApp.class)
 public class HibernateTimeZoneIT {
 
     @Autowired

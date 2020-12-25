@@ -1,6 +1,6 @@
 package com.isi.app.web.rest;
 
-import com.isi.app.JhipsterProjectApp;
+import com.isi.app.SoaAppApp;
 import com.isi.app.domain.User;
 import com.isi.app.repository.UserRepository;
 import com.isi.app.web.rest.vm.LoginVM;
@@ -27,7 +27,7 @@ import static org.hamcrest.Matchers.not;
  * Integration tests for the {@link UserJWTController} REST controller.
  */
 @AutoConfigureMockMvc
-@SpringBootTest(classes = JhipsterProjectApp.class)
+@SpringBootTest(classes = SoaAppApp.class)
 public class UserJWTControllerIT {
 
     @Autowired

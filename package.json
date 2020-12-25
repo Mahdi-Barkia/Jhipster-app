@@ -1,7 +1,7 @@
 {
-  "name": "jhipster-project",
+  "name": "soa-app",
   "version": "0.0.1-SNAPSHOT",
-  "description": "Description for jhipster_project",
+  "description": "Description for SOA_app",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

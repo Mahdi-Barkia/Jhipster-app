@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 
-import { JhipsterProjectTestModule } from '../../test.module';
+import { SoaAppTestModule } from '../../test.module';
 import { HomeComponent } from 'app/home/home.component';
 import { AccountService } from 'app/core/auth/account.service';
 import { LoginModalService } from 'app/core/login/login-modal.service';
@@ -14,7 +14,7 @@ describe('Component Tests', () => {
 
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        imports: [JhipsterProjectTestModule],
+        imports: [SoaAppTestModule],
         declarations: [HomeComponent],
       })
         .overrideTemplate(HomeComponent, '')

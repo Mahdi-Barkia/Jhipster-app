@@ -13,22 +13,15 @@
 # http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # ===================================================================
 
-eureka:
-  client:
-    enabled: false
-  instance:
-    appname: jhipster_project
-    instanceId: jhipster_project:${spring.application.instance-id:${random.value}}
-
 spring:
   profiles:
     # Uncomment the following line to enable tests against production database type rather than H2, using Testcontainers
     #active: testcontainers
   application:
-    name: jhipster_project
+    name: SOA_app
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:mem:jhipster_project;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:SOA_app;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     name:
     username:
     password:
@@ -64,13 +57,13 @@ spring:
     basename: i18n/messages
   task:
     execution:
-      thread-name-prefix: jhipster-project-task-
+      thread-name-prefix: soa-app-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: jhipster-project-scheduling-
+      thread-name-prefix: soa-app-scheduling-
       pool:
         size: 1
   thymeleaf:
@@ -88,7 +81,7 @@ server:
 
 jhipster:
   clientApp:
-    name: 'jhipsterProjectApp'
+    name: 'soaAppApp'
   logging:
     # To test json console appender
     use-json-format: false
@@ -104,7 +97,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-        base64-secret: YmE4ZjA1YWYyYzBlOWU4NzIyMGEwMmQ1ZmRiMjk3MGE5Nzg0NWQ2MTY1YzhmMDQ3NWZkM2Y0OTYwY2FjNmFhYTY3NDI4ZTJiNzY4ZTQxZGE0OTYyYmUzYjc0NWQ1MGRjNzZhOWRlZTZkNjU2OGIzMTQzNWE3MjUwNWQwYTJiN2Q=
+        base64-secret: NTZhMjk5NTJmOTc3YmM4MGNiYjMzY2Q0OTUzODQ3YjhmMjEwZWY0YTQ5Njg3Zjc4ZDNlMjllNDRkMWQyZjc2Y2MwNjFkMTdmM2UwOGU1OGNlZmY4NDliMWI2YjBhZjhmZWI5MGYwYTVhNTIxNzQxNDlmNGUwNTI4YTQ5MDg1OTE=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
   metrics:

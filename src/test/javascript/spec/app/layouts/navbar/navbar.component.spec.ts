@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { of } from 'rxjs';
 
-import { JhipsterProjectTestModule } from '../../../test.module';
+import { SoaAppTestModule } from '../../../test.module';
 import { ProfileInfo } from 'app/layouts/profiles/profile-info.model';
 import { NavbarComponent } from 'app/layouts/navbar/navbar.component';
 import { AccountService } from 'app/core/auth/account.service';
@@ -16,7 +16,7 @@ describe('Component Tests', () => {
 
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        imports: [JhipsterProjectTestModule],
+        imports: [SoaAppTestModule],
         declarations: [NavbarComponent],
       })
         .overrideTemplate(NavbarComponent, '')

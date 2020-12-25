@@ -1,6 +1,6 @@
 package com.isi.app.repository;
 
-import com.isi.app.JhipsterProjectApp;
+import com.isi.app.SoaAppApp;
 
 import com.isi.app.config.Constants;
 import com.isi.app.config.audit.AuditEventConverter;
@@ -28,7 +28,7 @@ import static com.isi.app.repository.CustomAuditEventRepository.EVENT_DATA_COLUM
 /**
  * Integration tests for {@link CustomAuditEventRepository}.
  */
-@SpringBootTest(classes = JhipsterProjectApp.class)
+@SpringBootTest(classes = SoaAppApp.class)
 @Transactional
 public class CustomAuditEventRepositoryIT {
 

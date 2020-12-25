@@ -1,6 +1,6 @@
 package com.isi.app.web.rest;
 
-import com.isi.app.JhipsterProjectApp;
+import com.isi.app.SoaAppApp;
 import com.isi.app.config.Constants;
 import com.isi.app.domain.User;
 import com.isi.app.repository.AuthorityRepository;
@@ -37,7 +37,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @AutoConfigureMockMvc
 @WithMockUser(value = TEST_USER_LOGIN)
-@SpringBootTest(classes = JhipsterProjectApp.class)
+@SpringBootTest(classes = SoaAppApp.class)
 public class AccountResourceIT {
     static final String TEST_USER_LOGIN = "test";
 

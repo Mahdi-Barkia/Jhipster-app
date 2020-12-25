@@ -2,7 +2,7 @@ package com.isi.app.service;
 
 import com.isi.app.domain.PersistentAuditEvent;
 import com.isi.app.repository.PersistenceAuditEventRepository;
-import com.isi.app.JhipsterProjectApp;
+import com.isi.app.SoaAppApp;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for {@link AuditEventService}.
  */
-@SpringBootTest(classes = JhipsterProjectApp.class)
+@SpringBootTest(classes = SoaAppApp.class)
 @Transactional
 public class AuditEventServiceIT {
     @Autowired
